@@ -1,7 +1,7 @@
 {
-	"name": "webpac",
+	"name": "heavenly-trucks",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Strona WWW dla firmy Heavenly Trucks",
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server --open --mode development",
