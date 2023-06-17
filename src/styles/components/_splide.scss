@@ -1,0 +1,41 @@
+.splide {
+	height: 85vh;
+	background-color: orangered;
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+	&__track {
+		height: 100%;
+	}
+	&__list {
+		height: inherit;
+	}
+
+	&__slide {
+		height: inherit;
+		overflow: hidden;
+
+		img {
+			z-index: 0;
+			display: block;
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			filter: brightness(40%) blur(2px);
+			transform: scale(1.04);
+		}
+	}
+
+	&__slide-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		height: 100%;
+		width: 100%;
+
+		color: white;
+
+		display: grid;
+		place-content: center;
+	}
+}

@@ -1,0 +1,14 @@
+.btn {
+	text-decoration: none;
+	color: white;
+	padding: 1.5rem 3rem;
+	border-radius: 99999px;
+	border: 1px solid $colorPrimary;
+	transition: 0.2s;
+	letter-spacing: 0.4px;
+
+	&:hover {
+		background-color: $colorPrimary;
+		color: $colorFontPrimary;
+	}
+}

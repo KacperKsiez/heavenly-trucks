@@ -1,16 +1,16 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
-const { resolve } = require("path");
+const { resolve } = require('path');
 
 module.exports = {
 	entry: {
-		app: "./src/index.js",
+		app: './src/index.js',
 	},
 	output: {
-		path: resolve(__dirname, "./dist"),
-		filename: "bundle.js",
+		path: resolve(__dirname, './dist'),
+		filename: 'bundle.js',
 	},
 	module: {
 		rules: [
@@ -27,19 +27,23 @@ module.exports = {
 			// 		},
 			// 	],
 			// },
+			// {
+			// 	test: /\.css$/,
+			// 	use: [MiniCssExtractPlugin.loader, 'css-loader'],
+			// 	exclude: /node_modules/,
+			// },
 			{
 				test: /\.css$/,
-				use: [MiniCssExtractPlugin.loader, "css-loader"],
-				exclude: /node_modules/,
+				use: ['style-loader', 'css-loader'],
 			},
 			{
 				test: /\.(s(a|c)ss)$/,
-				use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+				use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
 				exclude: /node_modules/,
 			},
 			{
 				test: /\.html$/,
-				loader: "html-loader",
+				loader: 'html-loader',
 				exclude: /node_modules/,
 			},
 			{
@@ -47,9 +51,9 @@ module.exports = {
 				exclude: /node_modules/,
 
 				use: {
-					loader: "babel-loader",
+					loader: 'babel-loader',
 					options: {
-						presets: ["@babel/preset-env", "minify"],
+						presets: ['@babel/preset-env', 'minify'],
 					},
 				},
 			},
@@ -57,41 +61,42 @@ module.exports = {
 				test: /\.tsx?$/,
 				use: [
 					{
-						loader: "babel-loader",
+						loader: 'babel-loader',
 						options: {
-							presets: ["@babel/preset-env", "minify"],
+							presets: ['@babel/preset-env', 'minify'],
 						},
 					},
-					"ts-loader",
+					'ts-loader',
 				],
 				exclude: /node_modules/,
 			},
 		],
 	},
 	resolve: {
-		extensions: [".tsx", ".ts", ".js"],
+		extensions: ['.tsx', '.ts', '.js'],
 	},
 	optimization: {
 		minimizer: [new CssMinimizerPlugin()],
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "main.css",
-			chunkFilename: "main.css",
+			filename: 'main.css',
+			chunkFilename: 'main.css',
 		}),
 		new CssMinimizerPlugin(),
 		new HtmlWebpackPlugin({
-			template: "./src/index.html",
-			filename: "./index.html", //relative to root of the application
+			template: './src/index.html',
+			filename: './index.html', //relative to root of the application
 		}),
-		new HtmlWebpackPlugin({ // TUTAJ DODAJEMY PODSTRONY
-			template: "./src/html/contact.html", // INPUT
-			filename: "./html/contact.html",  // OUTPUT //relative to root of the application
+		new HtmlWebpackPlugin({
+			// TUTAJ DODAJEMY PODSTRONY
+			template: './src/html/contact.html', // INPUT
+			filename: './html/contact.html', // OUTPUT //relative to root of the application
 		}),
 	],
 	devServer: {
 		static: {
-			directory: resolve(__dirname, "dist"),
+			directory: resolve(__dirname, 'dist'),
 		},
 		compress: true,
 		port: 9000,

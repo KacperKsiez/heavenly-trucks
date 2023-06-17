@@ -9,11 +9,15 @@
 
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/section-top';
 
 @import 'components/buttons';
 @import 'components/card';
+@import 'components/splide';
 
 @import 'pages/home';
 @import 'pages/contact';
 
 // @import 'themes/theme';
+
+@import '/node_modules/@splidejs/splide/dist/css/splide.min.css';
