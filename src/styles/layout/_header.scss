@@ -1,18 +1,69 @@
 .main-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 7rem;
+	z-index: 10;
+
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 
 	padding: 1rem clamp(2rem, 7vw, 8rem);
 
+	color: white;
+	transition: 0.3s;
+
+	&--scrolled {
+		background-color: white;
+		color: $colorFontPrimary;
+	}
+
 	&__list {
 		display: flex;
 		list-style-type: none;
-		gap: 1rem;
+		gap: 3rem;
 	}
 
 	&__logo {
-		font-size: 2.5rem;
-		font-weight: 100;
+		h1 {
+			font-weight: 900;
+			font-size: 2.4rem;
+		}
+	}
+
+	&__icon {
+		font-size: 2rem;
+		text-decoration: none;
+		color: white;
+		&--fb {
+			color: #1877f2;
+		}
+	}
+
+	&__list-item {
+		background: linear-gradient($colorPrimary, $colorPrimary) no-repeat;
+		background-size: 0 2px;
+		background-position: bottom;
+		transition: 0.2s;
+
+		&:hover,
+		&.active {
+			background: linear-gradient($colorPrimary, $colorPrimary) no-repeat;
+			background-size: 100% 2px;
+			background-position: bottom;
+		}
+	}
+
+	&__list-link {
+		padding: 0.5rem 1rem;
+		display: block;
+		color: white;
+		text-decoration: none;
+		font-size: 1.5rem;
+	}
+	&--scrolled &__list-link {
+		color: $colorFontPrimary;
 	}
 }
