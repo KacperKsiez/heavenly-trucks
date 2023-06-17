@@ -10,5 +10,7 @@
 	&:hover {
 		background-color: $colorPrimary;
 		color: $colorFontPrimary;
+
+		box-shadow: $colorPrimary 0px 5px 10px -5px, $colorPrimary 0px 8px 16px -8px;
 	}
 }

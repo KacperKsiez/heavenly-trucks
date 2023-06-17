@@ -17,6 +17,7 @@
 
 	&--scrolled {
 		background-color: white;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 		color: $colorFontPrimary;
 	}
 
@@ -27,6 +28,9 @@
 	}
 
 	&__logo {
+		cursor: pointer;
+		padding: 0.5rem 1rem;
+
 		h1 {
 			font-weight: 900;
 			font-size: 2.4rem;
@@ -37,6 +41,12 @@
 		font-size: 2rem;
 		text-decoration: none;
 		color: white;
+		transition: 0.2s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
 		&--fb {
 			color: #1877f2;
 		}
