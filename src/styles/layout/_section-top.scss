@@ -3,6 +3,8 @@
 	clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
 	width: 100vw;
 
+	z-index: 123;
+
 	// background: #234 url('../media/img/b1.jpg');
 	// background-size: cover;
 	// background-blend-mode: multiply;
@@ -47,6 +49,7 @@
 
 	&__img {
 		position: absolute;
+
 		top: 0;
 		left: 0;
 		display: block;

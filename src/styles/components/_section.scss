@@ -8,5 +8,9 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 4rem;
+
+		&--lg {
+			width: min(190rem, 100%);
+		}
 	}
 }

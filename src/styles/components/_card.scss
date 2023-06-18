@@ -1,0 +1,32 @@
+.offer-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 6rem 0;
+}
+
+.card {
+	width: 30rem;
+	margin: 2rem;
+	padding: 2rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.card img {
+	width: 20rem;
+	height: 20rem;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.card h3 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.card p {
+	font-size: 1.6rem;
+}

@@ -16,10 +16,22 @@
 	margin-bottom: 12rem !important;
 }
 
+.pt-12 {
+	padding-top: 12rem !important;
+}
+
+.ty-12 {
+	transform: translateY(-12rem) !important;
+}
+
 .shadow-childs {
 	& > * {
 		@include defaultShadow;
 	}
+}
+
+.shadow {
+	@include defaultShadow;
 }
 
 .flex-1 {
@@ -35,4 +47,8 @@
 
 .border-xl {
 	border-radius: 3rem !important;
+}
+
+.bg-lightgray {
+	background-color: #f4f4f4;
 }
