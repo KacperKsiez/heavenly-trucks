@@ -1,7 +1,7 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
-// @import 'vendors/bootstrap';
+@import '/node_modules//bootstrap-icons/font/bootstrap-icons.min.css';
 
 @import 'base/reset';
 @import 'base/typography';
@@ -11,12 +11,16 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/section-top';
+@import 'layout/row';
 
+// @import 'components/splide';
 @import 'components/buttons';
 @import 'components/card';
 @import 'components/link';
 @import 'components/heading';
-// @import 'components/splide';
+@import 'components/section';
+// @import 'components/google-map';
+@import 'components/find-us';
 
 @import 'pages/home';
 @import 'pages/contact';

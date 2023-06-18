@@ -1,5 +1,5 @@
 .footer {
-	background-color: #111;
+	background-color: #222;
 	padding: 5rem 0 3rem 0;
 
 	display: flex;
@@ -24,9 +24,9 @@
 	}
 
 	&__list-item {
-		transition: 0.2s;
+		transition: 0.15s;
 		&:hover {
-			transform: scale(1.1) rotate(3deg);
+			transform: scale(1.05);
 		}
 	}
 

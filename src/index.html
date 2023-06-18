@@ -13,30 +13,32 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<figure class="main-header__logo">
-				<a class="link" href="#">
-					<h1>Heavenly Trucks</h1>
+			<div class="row">
+				<figure class="main-header__logo">
+					<a class="link" href="#">
+						<h1>Heavenly Trucks</h1>
+					</a>
+				</figure>
+
+				<nav class="main-header__nav">
+					<ul class="main-header__list">
+						<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Strona Główna</a></li>
+						<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Oferta</a></li>
+						<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Wycena</a></li>
+						<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Kontakt</a></li>
+						<li class="main-header__list-item"><a class="link main-header__list-link" href="#">O nas</a></li>
+						<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Galeria</a></li>
+					</ul>
+				</nav>
+
+				<a class="main-header__icon main-header__icon--fb" href="https://www.facebook.com/profile.php?id=100076033755745" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+						<path
+							d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+						/>
+					</svg>
 				</a>
-			</figure>
-
-			<nav class="main-header__nav">
-				<ul class="main-header__list">
-					<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Strona Główna</a></li>
-					<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Oferta</a></li>
-					<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Wycena</a></li>
-					<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Kontakt</a></li>
-					<li class="main-header__list-item"><a class="link main-header__list-link" href="#">O nas</a></li>
-					<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Galeria</a></li>
-				</ul>
-			</nav>
-
-			<a class="main-header__icon main-header__icon--fb" href="https://www.facebook.com/profile.php?id=100076033755745" target="_blank">
-				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-					<path
-						d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-					/>
-				</svg>
-			</a>
+			</div>
 		</header>
 
 		<main class="container">
@@ -49,50 +51,127 @@
 				<img class="section-top__img" src="./media/img/b1.jpg" alt="silnik od scania" />
 			</section>
 
-			<section class="offer mb-8">
+			<section class="section offer mb-8">
 				<div class="heading">
 					<h2 class="heading__prim">Nasza oferta</h2>
 					<p class="heading__desc">Poznaj naszą ofertę</p>
 				</div>
 			</section>
-			<section class="gallery mb-8">
+			<section class="section gallery mb-8">
 				<div class="heading">
 					<h2 class="heading__prim">Wycena</h2>
 					<p class="heading__desc">Oferujemy darmową wycenę</p>
 				</div>
 			</section>
-			<section class="opinions mb-8">
+			<section class="section opinions mb-8">
 				<div class="heading">
 					<h2 class="heading__prim">Kontakt</h2>
 					<p class="heading__desc">Skontaktuj się z nami</p>
 				</div>
 			</section>
-			<section class="contact mb-8">
+			<section class="section contact mb-8">
 				<div class="heading">
 					<h2 class="heading__prim">O nas</h2>
 					<p class="heading__desc">Na nas możesz liczyć</p>
 				</div>
+				<div class="section__content"></div>
 			</section>
-			<section class="contact mb-8">
+			<section class="section contact mb-8">
 				<div class="heading">
 					<h2 class="heading__prim">Galeria</h2>
 					<p class="heading__desc">Zobacz nasze realizacje</p>
 				</div>
+				<div class="section__content shadow-childs">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid06BiWmcrFPj5siVr97fSSFsSS39LAz5m9T4MAauymFQUPKft12tpq1RsDfr8u4xqql%26id%3D100076033755745&show_text=true&width=500"
+						width="500"
+						height="671"
+						style="border: none; overflow: hidden"
+						scrolling="no"
+						frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+					></iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0j6fvhxK8zJKimGrNFXi2nKF9UbT9MUimCQFrdEacPSgXS3JQXqPH61XrXTF4AjfXl%26id%3D100076033755745&show_text=true&width=500"
+						width="500"
+						height="562"
+						style="border: none; overflow: hidden"
+						scrolling="no"
+						frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+					></iframe>
+				</div>
 			</section>
 
-			<footer class="footer">
-				<nav class="footer__nav">
-					<ul class="footer__list">
-						<li class="footer__list-item"><a class="link footer__list-link" href="#">Strona Główna</a></li>
-						<li class="footer__list-item"><a class="link footer__list-link" href="#">Oferta</a></li>
-						<li class="footer__list-item"><a class="link footer__list-link" href="#">Wycena</a></li>
-						<li class="footer__list-item"><a class="link footer__list-link" href="#">Kontakt</a></li>
-						<li class="footer__list-item"><a class="link footer__list-link" href="#">O nas</a></li>
-						<li class="footer__list-item"><a class="link footer__list-link" href="#">Galeria</a></li>
-					</ul>
-				</nav>
-				<p class="footer__copy">Copyright © 2023 Heavenly-Trucks.pl. All rights reserved.</p>
-			</footer>
+			<section class="find-us row-huge mt-huge-2">
+				<div class="find-us__left">
+					<h2 class="find-us__title">
+						<span class="find-us__title-top">Znajdź nas</span>
+						<span class="find-us__title-bottom">heavenly-trucks.pl</span>
+					</h2>
+					<div class="find-us__info">
+						<div class="find-us__item">
+							<i class="find-us__icon bi bi-pin-map-fill"></i>
+							Puchacza 3, 89-100 Bielawy
+						</div>
+						<div class="find-us__item">
+							<i class="find-us__icon bi bi-geo-alt-fill"></i>
+							Obok Stacji Paliw Seydak
+						</div>
+						<div class="find-us__item">
+							<i class="find-us__icon bi bi-telephone-fill"></i>
+							tel.533 595 533
+						</div>
+						<div class="find-us__item">
+							<i class="find-us__icon bi bi-envelope-fill"></i>
+							biuro@heavenly-trucks.pl
+						</div>
+					</div>
+					<a
+						target="_blank"
+						href="https://www.google.com/maps/place/Puchacza+3,+89-100+Bielawy/@53.1430342,17.554104,17z/data=!3m1!4b1!4m6!3m5!1s0x4703a1c3568cc9b9:0x4064c217581251f7!8m2!3d53.1430342!4d17.5566789!16s%2Fg%2F11j15lvpyb?entry=ttu"
+						class="find-us__button btn-rect link"
+					>
+						<i class="bi bi-map-fill">&nbsp;</i>
+						Otwórz w google maps
+					</a>
+				</div>
+				<div class="find-us__right mapouter">
+					<div class="google-map">
+						<iframe
+							class="google-map__iframe"
+							src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Puchacza%203%2C%2089-100%20Bielawy+(Heavenly%20Trucks)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed"
+							frameborder="0"
+							scrolling="no"
+							marginheight="0"
+							marginwidth="0"
+						></iframe>
+
+						<style>
+							#gmap_canvas img {
+								max-width: none !important;
+								background: none !important;
+							}
+						</style>
+					</div>
+				</div>
+			</section>
 		</main>
+
+		<footer class="footer">
+			<nav class="footer__nav">
+				<ul class="footer__list">
+					<li class="footer__list-item"><a class="link footer__list-link" href="#">Strona Główna</a></li>
+					<li class="footer__list-item"><a class="link footer__list-link" href="#">Oferta</a></li>
+					<li class="footer__list-item"><a class="link footer__list-link" href="#">Wycena</a></li>
+					<li class="footer__list-item"><a class="link footer__list-link" href="#">Kontakt</a></li>
+					<li class="footer__list-item"><a class="link footer__list-link" href="#">O nas</a></li>
+					<li class="footer__list-item"><a class="link footer__list-link" href="#">Galeria</a></li>
+				</ul>
+			</nav>
+			<p class="footer__copy">Copyright © 2023 Heavenly-Trucks.pl. All rights reserved.</p>
+		</footer>
 	</body>
 </html>

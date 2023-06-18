@@ -1,0 +1,11 @@
+.section {
+	&__content {
+		margin: 5rem auto 0 auto;
+		width: min(115rem, 100%);
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 4rem;
+	}
+}

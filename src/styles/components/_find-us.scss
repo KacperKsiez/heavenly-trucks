@@ -1,0 +1,79 @@
+.find-us {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&__left {
+		background-color: #f9f9f9;
+		height: 50rem;
+		min-width: Min(100%, 60rem);
+
+		padding: 7rem 3rem;
+
+		background-color: #f9f9f9;
+
+		display: grid;
+		grid-auto-rows: 1fr;
+		justify-items: center;
+		align-items: center;
+	}
+
+	&__info {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+		grid-row-gap: 1rem;
+		justify-items: center;
+		width: 100%;
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__title-top {
+		display: block;
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+		font-weight: 400;
+		color: $colorPrimary;
+	}
+
+	&__title-bottom {
+		display: block;
+		font-size: 4rem;
+		font-weight: 300;
+		margin-bottom: 2.5rem;
+		text-transform: uppercase;
+	}
+
+	&__item {
+		font-size: 1.6rem;
+	}
+
+	&__icon {
+		color: $colorPrimary;
+		margin-right: 1.5rem;
+		font-size: 2rem;
+	}
+
+	&__right {
+		flex: 1;
+		min-width: 50rem;
+		max-width: 80rem;
+
+		.gmap_canvas {
+			display: flex;
+			justify-content: center;
+		}
+
+		iframe {
+			width: 100%;
+			height: 50rem;
+		}
+
+		@include respond(small) {
+			height: 40rem;
+			min-width: 30rem;
+		}
+	}
+}

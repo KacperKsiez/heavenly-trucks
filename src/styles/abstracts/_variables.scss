@@ -1,3 +1,15 @@
 $colorPrimary: #f48f25;
 $colorPrimary: #dc3632;
 $colorFontPrimary: #111;
+
+$baseFontSize: 16px; // Adjust this to your base font size
+
+$breakpoints: (
+	small: 36em,
+	// 576px / $baseFontSize
+	medium: 48em,
+	// 768px / $baseFontSize
+	large: 62em,
+	// 992px / $baseFontSize
+	xlarge: 75em // 1200px / $baseFontSize,
+);
