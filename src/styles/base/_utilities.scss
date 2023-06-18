@@ -18,6 +18,21 @@
 
 .shadow-childs {
 	& > * {
-		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		@include defaultShadow;
 	}
+}
+
+.flex-1 {
+	flex: 1 !important;
+}
+
+.border {
+	border-radius: 1rem !important;
+}
+.border-lg {
+	border-radius: 2rem !important;
+}
+
+.border-xl {
+	border-radius: 3rem !important;
 }
