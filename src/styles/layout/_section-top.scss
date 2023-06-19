@@ -46,6 +46,14 @@
 		justify-self: center;
 
 		animation: toUp 1s backwards 1.7s;
+		transition: 1.7s;
+
+		&:hover {
+			transform: translateY(-3px);
+		}
+		&:focus {
+			transform: translateY(1px);
+		}
 	}
 
 	&__img {

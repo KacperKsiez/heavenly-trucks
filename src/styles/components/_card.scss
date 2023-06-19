@@ -2,7 +2,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 6rem 0;
+	padding: 1rem 0 6rem 0;
 }
 
 .card {
@@ -13,6 +13,12 @@
 	border-radius: 5px;
 	text-align: center;
 	@include lightShadow;
+
+	transition: 0.3s;
+
+	&:hover {
+		transform: scale(1.03) translateY(-1rem);
+	}
 }
 
 .card img {
