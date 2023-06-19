@@ -3,7 +3,8 @@
 	clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
 	width: 100vw;
 
-	z-index: 123;
+	position: relative;
+	z-index: 1;
 
 	// background: #234 url('../media/img/b1.jpg');
 	// background-size: cover;

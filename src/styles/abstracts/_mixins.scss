@@ -9,5 +9,9 @@
 }
 
 @mixin defaultShadow {
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 0.7px 2.8rem 0px;
+}
+
+@mixin lightShadow {
+	box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
 }

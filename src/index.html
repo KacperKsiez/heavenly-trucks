@@ -52,7 +52,7 @@
 				<img class="section-top__img" src="./media/img/b1.jpg" alt="silnik od scania" />
 			</section>
 
-			<section class="section offer mb-8 bg-lightgray">
+			<section class="section offer bg-lightgray pt-12 ty-12">
 				<div class="heading">
 					<h2 class="heading__prim">Nasza oferta</h2>
 					<p class="heading__desc">Poznaj naszą ofertę</p>
@@ -86,16 +86,39 @@
 					</div>
 				</div>
 			</section>
-			<section class="section gallery mb-8">
+			<!-- <section class="section gallery mb-8">
 				<div class="heading">
 					<h2 class="heading__prim">Wycena</h2>
 					<p class="heading__desc">Oferujemy darmową wycenę</p>
 				</div>
-			</section>
+			</section> -->
 			<section class="section opinions mb-8">
-				<div class="heading">
-					<h2 class="heading__prim">Kontakt</h2>
-					<p class="heading__desc">Skontaktuj się z nami</p>
+				<div class="section__content section__content--contact-grid section__content--no-margin section__content--around">
+					<div class="heading">
+						<h2 class="heading__prim">Kontakt</h2>
+						<p class="heading__desc">Skontaktuj się z nami</p>
+					</div>
+
+					<p class="text">
+						Skontaktuj się z nami już dziś, aby uzyskać więcej informacji na temat naszych usług. Jesteśmy gotowi odpowiedzieć na Twoje pytania i zaoferować profesjonalne wsparcie w zakresie tachografów, kalibracji,
+						sprawdzeń, naprawy oraz instalacji i naprawy samochodów ciężarowych.
+					</p>
+
+					<form class="contact-form">
+						<label class="contact-form__label" for="name">Imię i nazwisko:</label>
+						<input class="contact-form__input" type="text" id="name" name="name" required placeholder="Twoje imię i nazwisko" />
+
+						<label class="contact-form__label" for="email">Adres e-mail:</label>
+						<input class="contact-form__input" type="email" id="email" name="email" required placeholder="Twój adres E-mail" />
+
+						<label class="contact-form__label" for="phone">Numer telefonu:</label>
+						<input class="contact-form__input" type="tel" id="phone" name="phone" required placeholder="Numer telefonu" />
+
+						<label class="contact-form__label" for="message">Wiadomość:</label>
+						<textarea class="contact-form__textarea" id="message" name="message" required placeholder="Twoja wiadomość"></textarea>
+
+						<input class="contact-form__submit" type="submit" value="Wyślij" />
+					</form>
 				</div>
 			</section>
 			<section class="section contact mb-8">
