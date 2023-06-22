@@ -70,6 +70,10 @@ module.exports = {
 				],
 				exclude: /node_modules/,
 			},
+			{
+				test: /\.php$/i,
+				use: 'raw-loader',
+			},
 		],
 	},
 	resolve: {
@@ -87,11 +91,6 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/index.html',
 			filename: './index.html', //relative to root of the application
-		}),
-		new HtmlWebpackPlugin({
-			// TUTAJ DODAJEMY PODSTRONY
-			template: './src/html/contact.html', // INPUT
-			filename: './html/contact.html', // OUTPUT //relative to root of the application
 		}),
 	],
 	devServer: {

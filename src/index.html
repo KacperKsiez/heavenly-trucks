@@ -11,6 +11,7 @@
 			content="Heavenly Trucks - ekspert w tachografach i samochodach ciężarowych. Nasza firma specjalizuje się w kalibracji, sprawdzaniu, naprawie i instalacji tachografów. Zaufaj naszemu doświadczeniu i profesjonalizmowi, aby zapewnić Ci niezawodność i zgodność ze standardami branżowymi"
 		/>
 		<meta name="keywords" content="Heavenly Trucks, tachografy, kalibracja, sprawdzanie, naprawa, samochody ciężarowe, instalacje, mechanik, tachografy nakło" />
+		<script src="https://www.google.com/recaptcha/api.js"></script>
 	</head>
 	<body>
 		<header class="main-header">
@@ -23,12 +24,11 @@
 
 				<nav class="main-header__nav">
 					<ul class="main-header__list">
-						<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Strona Główna</a></li>
-						<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Oferta</a></li>
-						<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Wycena</a></li>
-						<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Kontakt</a></li>
-						<li class="main-header__list-item"><a class="link main-header__list-link" href="#">O nas</a></li>
-						<li class="main-header__list-item"><a class="link main-header__list-link" href="#">Galeria</a></li>
+						<li class="main-header__list-item"><a class="link main-header__list-link" href="#oferta">Oferta</a></li>
+						<li class="main-header__list-item"><a class="link main-header__list-link" href="#wycena">Wycena</a></li>
+						<li class="main-header__list-item"><a class="link main-header__list-link" href="#kontakt">Kontakt</a></li>
+						<li class="main-header__list-item"><a class="link main-header__list-link" href="#o-nas">O nas</a></li>
+						<li class="main-header__list-item"><a class="link main-header__list-link" href="#galeria">Galeria</a></li>
 					</ul>
 				</nav>
 
@@ -47,12 +47,12 @@
 				<div class="section-top__content">
 					<h1 class="section-top__heading-1">Heavenly Trucks</h1>
 					<h2 class="section-top__heading-2">Tachografy - Kalibracja - Sprawdzenie - Naprawa - Instalacje</h2>
-					<a class="btn section-top__btn" href="#">Nasza oferta</a>
+					<a class="btn section-top__btn" href="#oferta">Nasza oferta</a>
 				</div>
 				<img class="section-top__img" src="./media/img/b1.jpg" alt="silnik od scania" />
 			</section>
 
-			<section class="section offer bg-lightgray pt-12 ty-12">
+			<section id="oferta" class="section offer bg-lightgray pt-12 ty-12">
 				<div class="heading">
 					<h2 class="heading__prim">Nasza oferta</h2>
 					<p class="heading__desc">Poznaj naszą ofertę</p>
@@ -92,7 +92,7 @@
 					<p class="heading__desc">Oferujemy darmową wycenę</p>
 				</div>
 			</section> -->
-			<section class="section opinions mb-8">
+			<section id="kontakt" class="section opinions mb-8">
 				<div class="section__content section__content--contact-grid section__content--no-margin section__content--around">
 					<div class="heading">
 						<h2 class="heading__prim">Kontakt</h2>
@@ -104,7 +104,7 @@
 						sprawdzeń, naprawy oraz instalacji i naprawy samochodów ciężarowych.
 					</p>
 
-					<form class="contact-form">
+					<form method="post" action="message.php" class="contact-form">
 						<label class="contact-form__label" for="name">Imię i nazwisko:</label>
 						<input class="contact-form__input" type="text" id="name" name="name" required placeholder="Twoje imię i nazwisko" />
 
@@ -117,11 +117,13 @@
 						<label class="contact-form__label" for="message">Wiadomość:</label>
 						<textarea class="contact-form__textarea" id="message" name="message" required placeholder="Twoja wiadomość"></textarea>
 
+						<a class="g-recaptcha mb-1" data-sitekey="6LcFV3kgAAAAACRU3xZOslF5G-zxKjZG0gcvwmqV" data-callback="onSubmit" data-action="submit">Submit</a>
+
 						<input class="contact-form__submit" type="submit" value="Wyślij" />
 					</form>
 				</div>
 			</section>
-			<section class="section contact mb-8">
+			<section id="o-nas" class="section contact mb-8">
 				<div class="heading">
 					<h2 class="heading__prim">O nas</h2>
 					<p class="heading__desc">Kilka słów na nasz temat</p>
@@ -137,7 +139,7 @@
 				</article>
 				<div class="section__content"></div>
 			</section>
-			<section class="section contact mb-8">
+			<section id="galeria" class="section contact mb-8">
 				<div class="heading">
 					<h2 class="heading__prim">Galeria</h2>
 					<p class="heading__desc">Zobacz nasze realizacje</p>

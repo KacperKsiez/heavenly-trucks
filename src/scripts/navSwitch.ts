@@ -1,4 +1,6 @@
-class NavSwitcher {
+import { Functionality } from './type';
+
+class NavSwitcher implements Functionality {
 	private headerDiv = document.querySelector('.main-header');
 	private sectionTopDiv = document.querySelector('.section-top');
 

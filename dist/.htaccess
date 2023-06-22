@@ -1,5 +1,0 @@
-DirectoryIndex index.html index.php
-
-RewriteEngine on
-
-RewriteRule lol test.html

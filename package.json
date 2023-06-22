@@ -27,6 +27,7 @@
 		"image-optimize-loader": "^0.1.5",
 		"img-optimize-loader": "^1.0.7",
 		"mini-css-extract-plugin": "^2.7.6",
+		"raw-loader": "^4.0.2",
 		"sass": "^1.63.4",
 		"sass-loader": "^13.3.2",
 		"style-loader": "^3.3.3",

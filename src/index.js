@@ -9,5 +9,7 @@ import './styles/main.scss';
 // }).mount();
 
 import { NavSwitcher } from './scripts/navSwitch';
+import { ScrollManager } from './scripts/scroll';
 
 new NavSwitcher().init();
+// new ScrollManager().init();
