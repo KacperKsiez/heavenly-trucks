@@ -92,6 +92,10 @@ module.exports = {
 			template: './src/index.html',
 			filename: './index.html', //relative to root of the application
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/html/a.html',
+			filename: './a.html', //relative to root of the application
+		}),
 	],
 	devServer: {
 		static: {

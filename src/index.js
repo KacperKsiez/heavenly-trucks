@@ -10,6 +10,8 @@ import './styles/main.scss';
 
 import { NavSwitcher } from './scripts/navSwitch';
 import { ScrollManager } from './scripts/scroll';
+import { ContactForm } from './scripts/contact';
 
 new NavSwitcher().init();
+// new ContactForm().init();
 // new ScrollManager().init();
