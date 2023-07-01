@@ -6,16 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Serwis pojazdów ciężarowych - Tachografy, kalibracja, sprawdzanie, naprawa samochodów ciężarowych - Heavenly Trucks</title>
 		<link rel="icon" href="./media/img/favico.ico" type="image/x-icon" />
-		<meta
-			name="description"
-			content="Heavenly Trucks - ekspert w tachografach i samochodach ciężarowych. Nasza firma specjalizuje się w kalibracji, sprawdzaniu, naprawie i instalacji tachografów. Zaufaj naszemu doświadczeniu i profesjonalizmowi, aby zapewnić Ci niezawodność i zgodność ze standardami branżowymi"
-		/>
+		<meta name="description" content="Heavenly Trucks - ekspert w tachografach i samochodach ciężarowych. Nasza firma specjalizuje się w kalibracji, sprawdzaniu, naprawie i instalacji tachografów. Zaufaj naszemu doświadczeniu i profesjonalizmowi, aby zapewnić Ci niezawodność i zgodność ze standardami branżowymi" />
 		<meta name="keywords" content="Heavenly Trucks, tachografy, kalibracja, sprawdzanie, naprawa, samochody ciężarowe, instalacje, mechanik, tachografy nakło" />
 		<script src="https://www.google.com/recaptcha/api.js"></script>
 	</head>
 	<body>
 		<header class="main-header">
 			<div class="row">
+				<input type="checkbox" id="menu-switch" hidden />
 				<figure class="main-header__logo">
 					<a class="link" href="#">
 						<h1>Heavenly Trucks</h1>
@@ -24,21 +22,39 @@
 
 				<nav class="main-header__nav">
 					<ul class="main-header__list">
-						<li class="main-header__list-item"><a class="link main-header__list-link" href="#oferta">Oferta</a></li>
-						<li class="main-header__list-item"><a class="link main-header__list-link" href="#wycena">Wycena</a></li>
-						<li class="main-header__list-item"><a class="link main-header__list-link" href="#kontakt">Kontakt</a></li>
-						<li class="main-header__list-item"><a class="link main-header__list-link" href="#o-nas">O nas</a></li>
-						<li class="main-header__list-item"><a class="link main-header__list-link" href="#galeria">Galeria</a></li>
+						<li class="main-header__list-item">
+							<a class="link main-header__list-link" href="#oferta">Oferta</a>
+						</li>
+						<li class="main-header__list-item">
+							<a class="link main-header__list-link" href="#wycena">Wycena</a>
+						</li>
+						<li class="main-header__list-item">
+							<a class="link main-header__list-link" href="#kontakt">Kontakt</a>
+						</li>
+						<li class="main-header__list-item">
+							<a class="link main-header__list-link" href="#o-nas">O nas</a>
+						</li>
+						<li class="main-header__list-item">
+							<a class="link main-header__list-link" href="#galeria">Galeria</a>
+						</li>
 					</ul>
 				</nav>
 
 				<a class="main-header__icon main-header__icon--fb" href="https://www.facebook.com/profile.php?id=100076033755745" target="_blank">
 					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-						<path
-							d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-						/>
+						<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
 					</svg>
 				</a>
+
+				<label for="menu-switch">
+					<div class="main-header__switch-menu">
+						<i class="icon-burger">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</i>
+					</div>
+				</label>
 			</div>
 		</header>
 
@@ -78,10 +94,7 @@
 						<div class="card">
 							<!-- <img src="instalacje.jpg" alt="Instalacje" /> -->
 							<h3>Instalacje</h3>
-							<p>
-								Specjalizujemy się w profesjonalnej instalacji tachografów w samochodach ciężarowych. Nasi wykwalifikowani technicy zapewnią solidne i niezawodne połączenie, zgodne z najwyższymi standardami
-								bezpieczeństwa.
-							</p>
+							<p>Specjalizujemy się w profesjonalnej instalacji tachografów w samochodach ciężarowych. Nasi wykwalifikowani technicy zapewnią solidne i niezawodne połączenie, zgodne z najwyższymi standardami bezpieczeństwa.</p>
 						</div>
 					</div>
 				</div>
@@ -92,35 +105,35 @@
 					<p class="heading__desc">Oferujemy darmową wycenę</p>
 				</div>
 			</section> -->
-			<section id="kontakt" class="section opinions mb-8">
-				<div class="section__content section__content--contact-grid section__content--no-margin section__content--around">
-					<div class="heading">
-						<h2 class="heading__prim">Kontakt</h2>
-						<p class="heading__desc">Skontaktuj się z nami</p>
+			<section id="kontakt" class="section mb-8">
+				<div class="section__content">
+					<div class="section__content-left">
+						<div class="heading">
+							<h2 class="heading__prim">Kontakt</h2>
+							<p class="heading__desc">Skontaktuj się z nami</p>
+							<p class="text mt-2">Skontaktuj się z nami już dziś, aby uzyskać więcej informacji na temat naszych usług. Jesteśmy gotowi odpowiedzieć na Twoje pytania i zaoferować profesjonalne wsparcie w zakresie tachografów, kalibracji, sprawdzeń, naprawy oraz instalacji i naprawy samochodów ciężarowych.</p>
+						</div>
 					</div>
 
-					<p class="text">
-						Skontaktuj się z nami już dziś, aby uzyskać więcej informacji na temat naszych usług. Jesteśmy gotowi odpowiedzieć na Twoje pytania i zaoferować profesjonalne wsparcie w zakresie tachografów, kalibracji,
-						sprawdzeń, naprawy oraz instalacji i naprawy samochodów ciężarowych.
-					</p>
+					<div class="section__content-right">
+						<form method="post" action="message.php" class="contact-form">
+							<label class="contact-form__label" for="name">Imię i nazwisko:</label>
+							<input class="contact-form__input" type="text" id="name" name="name" required placeholder="Twoje imię i nazwisko" />
 
-					<form method="post" action="message.php" class="contact-form">
-						<label class="contact-form__label" for="name">Imię i nazwisko:</label>
-						<input class="contact-form__input" type="text" id="name" name="name" required placeholder="Twoje imię i nazwisko" />
+							<label class="contact-form__label" for="email">Adres e-mail:</label>
+							<input class="contact-form__input" type="email" id="email" name="email" required placeholder="Twój adres E-mail" />
 
-						<label class="contact-form__label" for="email">Adres e-mail:</label>
-						<input class="contact-form__input" type="email" id="email" name="email" required placeholder="Twój adres E-mail" />
+							<label class="contact-form__label" for="phone">Numer telefonu:</label>
+							<input class="contact-form__input" type="tel" id="phone" name="phone" required placeholder="Numer telefonu" />
 
-						<label class="contact-form__label" for="phone">Numer telefonu:</label>
-						<input class="contact-form__input" type="tel" id="phone" name="phone" required placeholder="Numer telefonu" />
+							<label class="contact-form__label" for="message">Wiadomość:</label>
+							<textarea class="contact-form__textarea" id="message" name="message" required placeholder="Twoja wiadomość"></textarea>
 
-						<label class="contact-form__label" for="message">Wiadomość:</label>
-						<textarea class="contact-form__textarea" id="message" name="message" required placeholder="Twoja wiadomość"></textarea>
+							<a class="g-recaptcha mb-1" data-sitekey="6LcFV3kgAAAAACRU3xZOslF5G-zxKjZG0gcvwmqV" data-callback="onSubmit" data-action="submit">Submit</a>
 
-						<a class="g-recaptcha mb-1" data-sitekey="6LcFV3kgAAAAACRU3xZOslF5G-zxKjZG0gcvwmqV" data-callback="onSubmit" data-action="submit">Submit</a>
-
-						<input class="contact-form__submit" type="submit" value="Wyślij" />
-					</form>
+							<input class="contact-form__submit" type="submit" value="Wyślij" />
+						</form>
+					</div>
 				</div>
 			</section>
 			<section id="o-nas" class="section contact mb-8">
@@ -131,10 +144,8 @@
 				<article class="section__content image-text">
 					<img class="image-text__img shadow" src="./media/img/ciezarowka.jpg" alt="ciężarówka" />
 					<p class="image-text__text">
-						"Heavenly Trucks to renomowana firma specjalizująca się w odrestaurowywaniu starych ciężarówek. Niezależnie od rocznika, nasza firma doskonale radzi sobie z przywracaniem dawnej świetności i funkcjonalności
-						pojazdom ciężarowym, które są narażone na działanie czasu i eksploatacji. Naszym celem jest przywrócenie oryginalnego blasku tych pojazdów, zachowując ich historyczną wartość i charakter. Heavenly Trucks jest
-						również wyspecjalizowanym dostawcą usług związanych z tachografami. Nasza firma oferuje pełen zakres usług, w tym kalibrację, sprawdzanie, naprawę oraz instalację tachografów. Nasi wykwalifikowani technicy
-						posiadają niezbędne umiejętności i doświadczenie, aby zapewnić precyzyjne i profesjonalne podejście do wszystkich aspektów związanych z tachografami."
+						"Heavenly Trucks to renomowana firma specjalizująca się w odrestaurowywaniu starych ciężarówek. Niezależnie od rocznika, nasza firma doskonale radzi sobie z przywracaniem dawnej świetności i funkcjonalności pojazdom ciężarowym, które są narażone na działanie czasu i eksploatacji. Naszym celem jest przywrócenie oryginalnego blasku tych pojazdów, zachowując ich historyczną wartość i charakter. Heavenly Trucks jest również wyspecjalizowanym dostawcą usług związanych z tachografami. Nasza firma oferuje
+						pełen zakres usług, w tym kalibrację, sprawdzanie, naprawę oraz instalację tachografów. Nasi wykwalifikowani technicy posiadają niezbędne umiejętności i doświadczenie, aby zapewnić precyzyjne i profesjonalne podejście do wszystkich aspektów związanych z tachografami."
 					</p>
 				</article>
 			</section>
@@ -144,26 +155,8 @@
 					<p class="heading__desc">Zobacz nasze realizacje</p>
 				</div>
 				<div class="section__content shadow-childs">
-					<iframe
-						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid06BiWmcrFPj5siVr97fSSFsSS39LAz5m9T4MAauymFQUPKft12tpq1RsDfr8u4xqql%26id%3D100076033755745&show_text=true&width=500"
-						width="500"
-						height="671"
-						style="border: none; overflow: hidden"
-						scrolling="no"
-						frameborder="0"
-						allowfullscreen="true"
-						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-					></iframe>
-					<iframe
-						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0j6fvhxK8zJKimGrNFXi2nKF9UbT9MUimCQFrdEacPSgXS3JQXqPH61XrXTF4AjfXl%26id%3D100076033755745&show_text=true&width=500"
-						width="500"
-						height="562"
-						style="border: none; overflow: hidden"
-						scrolling="no"
-						frameborder="0"
-						allowfullscreen="true"
-						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-					></iframe>
+					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid06BiWmcrFPj5siVr97fSSFsSS39LAz5m9T4MAauymFQUPKft12tpq1RsDfr8u4xqql%26id%3D100076033755745&show_text=true&width=500" width="500" height="671" style="border: none; overflow: hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0j6fvhxK8zJKimGrNFXi2nKF9UbT9MUimCQFrdEacPSgXS3JQXqPH61XrXTF4AjfXl%26id%3D100076033755745&show_text=true&width=500" width="500" height="562" style="border: none; overflow: hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 				</div>
 			</section>
 
@@ -191,25 +184,14 @@
 							biuro@heavenly-trucks.pl
 						</div>
 					</div>
-					<a
-						target="_blank"
-						href="https://www.google.com/maps/place/Puchacza+3,+89-100+Bielawy/@53.1430342,17.554104,17z/data=!3m1!4b1!4m6!3m5!1s0x4703a1c3568cc9b9:0x4064c217581251f7!8m2!3d53.1430342!4d17.5566789!16s%2Fg%2F11j15lvpyb?entry=ttu"
-						class="find-us__button btn-rect link"
-					>
+					<a target="_blank" href="https://www.google.com/maps/place/Puchacza+3,+89-100+Bielawy/@53.1430342,17.554104,17z/data=!3m1!4b1!4m6!3m5!1s0x4703a1c3568cc9b9:0x4064c217581251f7!8m2!3d53.1430342!4d17.5566789!16s%2Fg%2F11j15lvpyb?entry=ttu" class="find-us__button btn-rect link">
 						<i class="bi bi-map-fill">&nbsp;</i>
 						Otwórz w google maps
 					</a>
 				</div>
 				<div class="find-us__right mapouter">
 					<div class="google-map">
-						<iframe
-							class="google-map__iframe"
-							src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Puchacza%203%2C%2089-100%20Bielawy+(Heavenly%20Trucks)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed"
-							frameborder="0"
-							scrolling="no"
-							marginheight="0"
-							marginwidth="0"
-						></iframe>
+						<iframe class="google-map__iframe" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Puchacza%203%2C%2089-100%20Bielawy+(Heavenly%20Trucks)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 
 						<style>
 							#gmap_canvas img {
@@ -225,12 +207,24 @@
 		<footer class="footer">
 			<nav class="footer__nav">
 				<ul class="footer__list">
-					<li class="footer__list-item"><a class="link footer__list-link" href="#">Strona Główna</a></li>
-					<li class="footer__list-item"><a class="link footer__list-link" href="#">Oferta</a></li>
-					<li class="footer__list-item"><a class="link footer__list-link" href="#">Wycena</a></li>
-					<li class="footer__list-item"><a class="link footer__list-link" href="#">Kontakt</a></li>
-					<li class="footer__list-item"><a class="link footer__list-link" href="#">O nas</a></li>
-					<li class="footer__list-item"><a class="link footer__list-link" href="#">Galeria</a></li>
+					<li class="footer__list-item">
+						<a class="link footer__list-link" href="#">Strona Główna</a>
+					</li>
+					<li class="footer__list-item">
+						<a class="link footer__list-link" href="#">Oferta</a>
+					</li>
+					<li class="footer__list-item">
+						<a class="link footer__list-link" href="#">Wycena</a>
+					</li>
+					<li class="footer__list-item">
+						<a class="link footer__list-link" href="#">Kontakt</a>
+					</li>
+					<li class="footer__list-item">
+						<a class="link footer__list-link" href="#">O nas</a>
+					</li>
+					<li class="footer__list-item">
+						<a class="link footer__list-link" href="#">Galeria</a>
+					</li>
 				</ul>
 			</nav>
 			<p class="footer__copy">Copyright © 2023 Heavenly-Trucks.pl. All rights reserved.</p>

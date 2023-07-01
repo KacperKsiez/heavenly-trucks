@@ -7,8 +7,16 @@
 }
 
 :root {
-	font-size: 62.5% !important;
+	font-size: 62.5%;
 	scroll-behavior: smooth;
+
+	@include respond(large) {
+		font-size: 58.5%;
+	}
+
+	@include respond(medium-large) {
+		font-size: 55.5%;
+	}
 }
 
 body {

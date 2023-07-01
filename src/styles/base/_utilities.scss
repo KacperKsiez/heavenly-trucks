@@ -1,23 +1,13 @@
-.mb-1 {
-	margin-bottom: 1rem !important;
-}
+@for $i from 1 through 15 {
+	$value: $i * 1rem;
 
-.mb-2 {
-	margin-bottom: 2rem !important;
-}
+	.mt-#{$i} {
+		margin-top: $value !important;
+	}
 
-.mb-4 {
-	margin-bottom: 4rem !important;
-}
-
-.mb-8 {
-	margin-bottom: 8rem !important;
-}
-.mb-10 {
-	margin-bottom: 10rem !important;
-}
-.mb-12 {
-	margin-bottom: 12rem !important;
+	.mb-#{$i} {
+		margin-bottom: $value !important;
+	}
 }
 
 .pt-12 {

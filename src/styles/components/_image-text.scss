@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	gap: 4rem;
 
 	&__text {
 		flex: 1;
@@ -16,7 +17,6 @@
 
 	&__img {
 		flex: 1;
-		margin-right: 4rem;
 
 		display: block;
 		width: 25rem;

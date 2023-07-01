@@ -1,6 +1,6 @@
 {
 	"useTabs": true,
 	"htmlWhitespaceSensitivity": "ignore",
-	"printWidth": 220,
+	"printWidth": 520,
 	"singleQuote": true
 }
