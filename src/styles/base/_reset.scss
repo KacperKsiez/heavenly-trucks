@@ -9,6 +9,7 @@
 :root {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 
 	@include respond(large) {
 		font-size: 58.5%;

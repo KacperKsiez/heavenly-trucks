@@ -1,5 +1,5 @@
 .section {
-	padding: 0rem 4rem;
+	padding: 0rem 2rem;
 	&__content {
 		margin: 5rem auto 0 auto;
 		width: min(115rem, 100%);
@@ -54,6 +54,6 @@
 	&__content-right {
 		max-width: 500px;
 		width: 450px;
-		min-width: 320px;
+		min-width: 300px;
 	}
 }
