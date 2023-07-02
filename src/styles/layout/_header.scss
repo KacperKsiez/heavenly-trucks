@@ -15,7 +15,6 @@
 		height: 100%;
 		margin: 0 auto;
 		display: flex;
-		// flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 	}
@@ -27,7 +26,7 @@
 
 	&--scrolled {
 		background-color: white;
-		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 0.7rem 3rem 0px;
 		color: $colorFontPrimary;
 	}
 
@@ -143,7 +142,6 @@
 	}
 
 	#menu-switch:checked ~ .main-header__nav {
-		border: 3px solid black;
 		display: flex !important;
 	}
 
