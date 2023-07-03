@@ -77,4 +77,9 @@
 			min-width: 30rem;
 		}
 	}
+	@include respond(small) {
+		&__button {
+			margin-top: 2rem;
+		}
+	}
 }

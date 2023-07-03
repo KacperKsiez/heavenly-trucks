@@ -1,4 +1,4 @@
-@for $i from 1 through 15 {
+@for $i from 0 through 12 {
 	$value: $i * 1rem;
 
 	.mt-#{$i} {

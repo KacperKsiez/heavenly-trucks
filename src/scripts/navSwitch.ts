@@ -1,4 +1,4 @@
-import { Functionality } from './type';
+import { Functionality } from './Functionality';
 
 class NavSwitcher implements Functionality {
 	private headerDiv = document.querySelector('.main-header');
