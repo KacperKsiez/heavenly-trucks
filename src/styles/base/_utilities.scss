@@ -8,14 +8,18 @@
 	.mb-#{$i} {
 		margin-bottom: $value !important;
 	}
+
+	.pt-#{$i} {
+		padding-top: $value !important;
+	}
+
+	.pb-#{$i} {
+		padding-bottom: $value !important;
+	}
 }
 
-.pt-12 {
-	padding-top: 12rem !important;
-}
-
-.ty-12 {
-	transform: translateY(-12rem) !important;
+.mt-minus-12 {
+	margin-top: -12rem !important;
 }
 
 .ml-10 {
