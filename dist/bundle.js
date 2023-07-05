@@ -3683,6 +3683,6 @@ var SplideRenderer = /*#__PURE__*/(/* unused pure expression or super */ null &&
 
 
 ;// CONCATENATED MODULE: ./src/index.js
-new NavSwitcher().init();var slider=new Splide(document.querySelector("#slider"),{lazyLoad:!0,perPage:3,autoHeight:!0});slider.mount();
+new NavSwitcher().init();var slider=new Splide(document.querySelector("#slider"),{lazyLoad:!0,perPage:3,autoHeight:!0,type:"loop",gap:"1.5rem",breakpoints:{1250:{perPage:2},660:{perPage:1}}});slider.mount();
 /******/ })()
 ;
