@@ -4,13 +4,14 @@ class NavSwitcher implements Functionality {
 	private headerDiv = document.querySelector('.main-header');
 	private sectionTopDiv = document.querySelector('.section-top');
 
-	constructor() {}
+	public constructor() {}
 
-	init() {
-		this.addObserver();
+	public init(): void {
+		this.switchClassNameOnScroll();
+		this.hideOnHrefClick();
 	}
 
-	addObserver() {
+	private switchClassNameOnScroll(): void {
 		const observer = new IntersectionObserver(
 			(elements) => {
 				const sectionTopDiv = elements[0];
@@ -27,6 +28,19 @@ class NavSwitcher implements Functionality {
 		);
 
 		observer.observe(this.sectionTopDiv);
+	}
+
+	private hideOnHrefClick(): void {
+		const headerCheckbox: HTMLInputElement | null = document.querySelector('#menu-switch');
+		const navLinks: NodeListOf<HTMLAnchorElement> = document.querySelectorAll('.main-header__list-item');
+
+		navLinks.forEach((link) => {
+			link.addEventListener('click', () => {
+				if (headerCheckbox && headerCheckbox.checked) {
+					headerCheckbox.checked = false;
+				}
+			});
+		});
 	}
 }
 

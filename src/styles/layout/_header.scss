@@ -147,7 +147,7 @@
 	}
 
 	#menu-switch:checked ~ .main-header__nav {
-		display: flex !important;
+		transform: translateX(0%);
 	}
 
 	@include respond(medium-large) {
@@ -160,7 +160,9 @@
 		}
 
 		&__nav {
-			display: none;
+			display: flex !important;
+			transform: translateX(100%);
+			transition: 0.3s;
 
 			position: fixed;
 			top: 0;
