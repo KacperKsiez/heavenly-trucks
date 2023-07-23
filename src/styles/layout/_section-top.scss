@@ -26,6 +26,11 @@
 		letter-spacing: 2px;
 
 		animation: toLeft 1s backwards 0.3s;
+
+		@include respond(small) {
+			font-size: 6rem;
+			margin-bottom: 3rem;
+		}
 	}
 
 	&__heading-2 {
