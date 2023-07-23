@@ -1,8 +1,4 @@
 .splide {
-	// height: 85vh;
-	// background-color: orangered;
-	// clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-
 	&__track {
 		height: 100%;
 	}
@@ -12,8 +8,6 @@
 
 	&__slide {
 		height: inherit;
-		// overflow: hidden;
-		// box-shadow: 2rem 1rem 2rem black;
 
 		img {
 			z-index: 0;
@@ -21,8 +15,6 @@
 			width: 100%;
 			height: auto;
 			object-fit: contain;
-			// filter: brightness(40%) blur(2px);
-			// transform: scale(1.04);
 		}
 	}
 
