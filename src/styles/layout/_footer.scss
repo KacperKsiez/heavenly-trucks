@@ -11,6 +11,7 @@
 		color: lightgray;
 		font-size: 1.6rem;
 		align-self: center;
+		text-align: center;
 	}
 
 	&__list {
@@ -26,6 +27,8 @@
 
 	&__list-item {
 		transition: 0.15s;
+		margin: 1rem;
+
 		&:hover {
 			transform: scale(1.05);
 		}

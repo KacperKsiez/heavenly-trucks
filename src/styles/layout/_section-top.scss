@@ -1,6 +1,11 @@
 .section-top {
 	height: 85vh;
 	clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+
+	@include respond(small) {
+		clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+	}
+
 	width: 100vw;
 
 	position: relative;
@@ -35,8 +40,8 @@
 
 	&__heading-2 {
 		font-size: 2rem;
-		margin-bottom: 5rem;
 		font-weight: 400;
+		margin: 0 2rem 5rem 2rem;
 
 		animation: toRight 1s backwards 1.1s;
 	}

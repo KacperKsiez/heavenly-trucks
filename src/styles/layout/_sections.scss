@@ -1,0 +1,15 @@
+.gallery {
+	margin-bottom: 10rem;
+
+	@include respond(small) {
+		margin-bottom: 0;
+	}
+}
+
+.contact {
+	padding: 8rem 2rem !important;
+
+	@include respond(small) {
+		padding: 4rem 2rem !important;
+	}
+}
