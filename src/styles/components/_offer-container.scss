@@ -1,0 +1,22 @@
+.offer-section {
+	display: flex;
+	padding-bottom: 8rem;
+
+	img {
+		object-fit: contain;
+		flex: 1;
+		width: 100%;
+	}
+	.card {
+		flex: 1;
+		align-self: center;
+		height: 100%;
+		width: 100%;
+		min-height: 26rem;
+	}
+
+	@include respond(medium-large) {
+		flex-direction: column;
+		padding-bottom: 3rem;
+	}
+}

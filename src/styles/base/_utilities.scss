@@ -71,3 +71,9 @@
 .border-none {
 	border: none !important;
 }
+
+.fixed-aspect-for-about-photo {
+	aspect-ratio: 1640/924 !important;
+	display: block !important;
+	width: 924px;
+}
